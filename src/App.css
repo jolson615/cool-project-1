@@ -1,3 +1,11 @@
 .App {
   text-align: center;
 }
+
+.electric {
+  background-color: yellow;
+}
+
+.normal {
+  background-color: wheat;
+}
