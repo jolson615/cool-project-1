@@ -18,6 +18,8 @@ const App = () => {
       classes += " electric"
     } else if (component.state.currentPokemon === "Eevee") {
       classes += " normal"
+    } else if (component.state.currentPokemon === "Bulbasaur") {
+      classes += " grass"
     }
     return (
       <div className={classes}>
@@ -32,6 +34,11 @@ const App = () => {
           handleClick={component.handleClick}
           title="Eevee" 
           desc="Eevee is the game mascot and starter Pokémon in Pokémon: Let's Go, Eevee!, as well as for the main characters of Pokémon XD: Gale of Darkness and Pokémon Conquest. It is also the rival's starter Pokémon in Pokémon Yellow, although Professor Oak originally intended to give it to the player."
+          />
+        <Card 
+          handleClick={component.handleClick}
+          title="Bulbasaur" 
+          desc="Along with Charmander and Squirtle, Bulbasaur is one of three starter Pokémon of Kanto available at the beginning of Pokémon Red, Green, Blue, FireRed, and LeafGreen."
           />
       </div>
     );
